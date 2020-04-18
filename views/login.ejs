@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>AJAX</title>
+    </head>
+    <body>
+        <center>
+        <h1>Enter your details</h1>
+        <% if(errorMessage){ %>
+            <font color="red"><p><%= errorMessage %></p></font>
+        <% } %>
+        <form action="/details" method="POST">
+            NAME <input type="text" name="name" placeholder="Enter Name"><br><br>
+            PASSWORD <input type="password" name="password" placeholder="Enter Password"><br><br>
+            <button>Submit</button>
+        </form>
+        <br>
+        <a href="/show/users"><button>Users</button></a>
+        </center>
+    </body>
+</html>
+    
